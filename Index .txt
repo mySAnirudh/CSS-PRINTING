@@ -1,0 +1,27 @@
+
+     **** PRINTING ****
+
+     You can use CSS to change the appearance of your web page when it is printed 
+on a paper. You can specify one font for the screen version and another for the 
+print version.
+You have seen @media rule in the previous chapters. This rule allows you to 
+specify different styles for different media. So, you can define different rules for 
+a screen and a printer.
+The following example specifies different font families for screen and printer. The 
+next CSS uses the same font size for both screen as well as printer.
+<style tyle="text/css">
+<!--
+@media screen
+{
+p.bodyText {font-family:verdana, arial, sans-serif;}
+}
+@media print
+{
+p.bodyText {font-family:georgia, times, serif;}
+}
+@media screen, print
+{
+p.bodyText {font-size:10pt}
+}
+-->
+</style>
